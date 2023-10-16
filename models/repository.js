@@ -129,7 +129,10 @@ export default class Repository {
         }
         return false;
     }
-    getAll() {
+    getAll(params = null) {
+        // Todo Labo 4
+        // let collectionFilter = new CollectionFilter(this.objects(), params, this.model);
+        // let objectsList = collectionFilter.get();
         let objectsList = this.objects();
         let bindedDatas = [];
         if (objectsList)
